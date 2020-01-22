@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>簡単！必修HTMLタグ一覧！</title>
+        <style>
+            body{
+                margin:0;
+                background:#F3F3F3;
+            }
+            h1{
+                text-align: center;
+                color:aquamarine;
+                background:lightgray;
+                text-shadow:5px 5px 3px black;
+                margin-top:0;
+                padding:50px;
+            }
+            h2{
+                border-left:15px solid blue;
+            }
+            .main{
+                margin:0 30px 0 30px;;
+            }
+            nav{
+                text-align: center;
+                border:3px solid gray;
+                margin:0% 35% 0% 35%;
+                font-size: 30px;
+            }
+            nav ul{
+                font-size:initial;
+                text-align: left;
+                
+            }
+            nav li{
+                margin:5px 0px 5px 0px;
+            }
+            nav li a{
+                color: gray;
+            }
+            nav li a:hover{
+                color:darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="top" style="font-size:300%">簡単！必修HTMLタグ一覧！</h1>
+
+        <span style="color:red">注：このページに有るタグが全てではありません。が、よく使うのはこいつらです。</span><br>
+        ちなみにこのページのソースコードは全要素をhtmlファイル1つに突っ込んでる都合上、かなり汚いよ！<br>
+        <nav>
+            目次
+            <ul>
+                <li><a href="#doctype">&lt;!DOCTYPE html&gt;</a>：おまじない</li>
+                <li><a href="#html">&lt;html&gt;</a>：「俺ははhtml」</li>
+                <li><a href="#head">&lt;head&gt;</a>：ページ情報関連</li>
+                <li><a href="#title">&lt;title&gt;</a>：タイトル</li>
+                <li><a href="#body">&lt;body&gt;</a>：ページの内容</li>
+                <li><a href="#br">&lt;br&gt;</a>：改行</li>
+                <li><a href="#div">&lt;div&gt;</a>：箱</li>
+                <li><a href="#h">&lt;h1&gt;～&lt;h6&gt;</a>：見出し</li>
+                <li><a href="#a">&lt;a&gt;</a>：リンク</li>
+                <li><a href="#p">&lt;p&gt;</a>：段落</li>
+                <li><a href="#img">&lt;img&gt;</a>：画像</li>
+                <li><a href="#ul">&lt;ul&gt;,&lt;ol&gt;,&lt;li&gt;</a>：リスト</li>
+            </ul>
+        </nav>
+        <div class="main">
+        <h2 id="doctype">&lt;!DOCTYPE html&gt;</h2>
+        htmlの最初に記述するおまじない。<br>
+        上記の記法はHTML5のもので、例えばHTMl 4.01の場合は<br>
+        <code>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</code><br>
+        と書く<br>
+
+        <h2 id="html">&lt;html&gt;</h2>
+        この中がHTMLで書かれている。<br>
+        ということを示すタグ。<br>
+        基本的にページのあれこれはすべてこの中に書く<br>
+
+        <h2 id="head">&lt;head&gt;</h2>
+        HTML内の色んな情報を格納するところを表すタグ。<br>
+        例えば、CSSのファイル格納場所のパスとか、JSのパスとか、ページタイトル、文字コード、SNSでリンクが貼られた際に表示する画像 etc...<br>
+
+        <h2 id="title">&lt;title&gt;</h2>
+        タイトル設定用のタグ。<br>
+        head内に記述。<br>
+        タブのところに書いてあるアレ。<br>
+
+
+        <h2 id="body">&lt;body&gt;</h2>
+        文書本体を入れるところを示すタグ。<br>
+        この中にページのテキストだとかそういったデータを入れる。<br>
+        また、ページ全体を示しているからCSSとかでページ内の(スタイル未指定の)全要素に対してスタイルを割り当てたりできる。<br>
+
+        <h2 id="br">&lt;br&gt;</h2>
+        改行<br>
+        逆に言えばこれを入れないと開業されない<br>
+        (ただし&lt;p&gt;や&lt;h1&gt;などの一部のタグを使っている場合は例外)<br>
+        <h3>例</h3>
+        こ<br>
+        んな<br>
+        かんじ<br>
+        で改行が<br>
+        できます。<br>
+
+        <h2 id="div">&lt;div&gt;</h2>
+        言うなれば箱。<br>
+        単体ではなんの意味も持たないが、divタグ内の要素にスタイルを一気に指定できる<br>
+        意外と便利。<br>
+        似たようなタグとしてspanタグがある。<br>
+        (用法や機能は少々異なる。)<br>
+        <h3>例</h3>
+        <div style="background:darkgray; color:white; text-shadow: black 1px 1px 0px, black -1px 1px 0px,
+        black 1px -1px 0px, black -1px -1px 0px; text-align: center; margin-right:50%">divタグを使うと<br>このように<br>
+            <img src="https://images.pexels.com/photos/730896/pexels-photo-730896.jpeg" width=20% height=20%><br>
+            複数の要素にまとめてスタイルがつけられます。
+        </div>
+        <br>
+        <h2 id="h">&lt;h1&gt;～&lt;h6&gt;</h2>
+        見出し。<br>
+        h1からh6まで存在し、数が大きくなるほどサイズが小さくなる。<br>
+        とはいえあくまでも見出しとして使うタグなのでテキストサイズの変更目的での使用はNG<br>
+        <h3>例</h3>
+        ※実際のサイズより20%縮小
+        <div style="font-size:80%">
+            <h1 style="text-align: initial;color:initial;background:initial;text-shadow:initial;margin-top:initial;padding:initial;">これがh1</h1>
+            <h2 style="border-left:initial">これがh2</h2>
+            <h3>これがh3</h3>
+            <h4>これがh4</h4>
+            <h5>これがh5</h5>
+            <h6>これがh6</h6>
+        </div>
+
+        <h2 id="a">&lt;a&gt;</h2>
+        リンク<br>
+        href属性と併用することでリンクを配置することができる。<br>
+        他のページへのリンク以外にも、id属性を用いることで同じページ内の該当するidの場所に飛ばすこともできる。<br>
+        <h3>例</h3>
+        <a href="https://www.google.com/">ここをクリックするとGoogleにジャンプします</a><br>
+        <br>
+        <a href="#top">ここをクリックするとサイトの最上に移動します。</a>
+        <br>
+
+        <h2 id="p">&lt;p&gt;</h2>
+        段落。<br>
+        タグ1つにつき1つの段落として表す。<br>
+        段落の前後は一行改行される。<br>
+        <h3>例</h3>
+        <p>例えば、これが第一段落だとするならば</p>
+        <p>これが第二段落だろう。</p>
+
+        <h2 id="img">img</h2>
+        src属性と併用することで画像を表示させることができるタグ。<br>
+        アニメーションgifやapngもこのタグを使えば何もせずとも動く。<br>
+        <h3>例</h3>
+        普通の画像。<br>
+        <img src="https://images.pexels.com/photos/374624/pexels-photo-374624.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=360&w=480" width=480 height=360><br>
+        <br>
+        アニメーション画像(動画ではない)<br>
+        <span style="color:red">注:一部環境では動かない場合あり</span><br>
+        <img src="http://ics-web.jp/lab-data/140930_apng/images/elephant_apng_zopfli.png" width=300 height=300><br>
+
+        <h2 id="ul">&lt;ul&gt;,&lt;ol&gt;,&lt;li&gt;</h2>
+        箇条書きに使うタグ<br>
+        &lt;ul&gt;,&lt;ol&gt;は箇条書きの範囲、それぞれの違いは番号をつけるか否か<br>
+        &lt;li&gt;はulまたはolタグ内の各項目<br>
+        <h3>例</h3>
+        <ul>
+            <li>例えば</li>
+            <li>ulを使えば</li>
+            <li>こんな感じ</li>
+        </ul>
+        <ol>
+            <li>例えば</li>
+            <li>olを使えば</li>
+            <li>こんな感じ</li>
+        </ol>
+        </div>
+
+    </body>
+</html>
