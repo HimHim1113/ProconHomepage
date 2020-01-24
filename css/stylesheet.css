@@ -1,0 +1,28 @@
+
+body{
+    margin: 0px;
+    background-color: transparent;
+    color: black;
+}
+
+header{
+    background-color:lightblue;
+    padding: 20px;
+    font-size:20px;
+}
+
+header a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    background-color:lightblue;
+    padding: 5px 0px 5px 0px;
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+}
