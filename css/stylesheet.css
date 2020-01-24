@@ -1,5 +1,6 @@
 
 body{
+    font-family: 'Hannari', sans-serif;
     margin: 0px;
     background-color: transparent;
     color: black;
@@ -31,6 +32,12 @@ ul{
     transition:opacity .5s cubic-bezier(.8, 0, .2, 1), left .5s cubic-bezier(.8, 0, .2, 1);
 }
 
+.main{
+    padding-top: 1%;
+    margin: 75px 5%;
+    z-index: -4;
+}
+
 footer {
     width: 100%;
     background-color:lightblue;
@@ -39,6 +46,16 @@ footer {
     position: absolute;
     text-align: center;
     margin: auto;
+}
+
+.logo{
+    font-size:45px;
+    float: left;
+    margin: 0 3%;
+    left: 0px;
+    position: fixed;
+    opacity: 1;
+    transition: opacity .5s cubic-bezier(.8, 0, .2, 1), left .5s cubic-bezier(.8, 0, .2, 1);
 }
 
 /*--HAMBURGER----------------------*/
